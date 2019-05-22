@@ -40,8 +40,7 @@ public class ReportingServiceTest {
 
         //region Then
         assertThat(actualReport)
-                .contains("##")
-                .contains(String.valueOf(0L))
+                .contains("## " + String.valueOf(0L))
                 .contains("100.0");
         //endregion
     }

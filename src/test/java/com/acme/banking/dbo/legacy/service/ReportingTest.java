@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static com.acme.banking.dbo.legacy.domain.AccountType.CHECKING;
 import static com.acme.banking.dbo.legacy.domain.AccountType.SAVING;
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.fest.assertions.api.Assertions.assertThat;
 
 public class ReportingTest {
     @Before

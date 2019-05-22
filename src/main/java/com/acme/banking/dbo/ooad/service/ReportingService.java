@@ -3,6 +3,9 @@ package com.acme.banking.dbo.ooad.service;
 import com.acme.banking.dbo.ooad.dal.AccountRepository;
 import com.acme.banking.dbo.ooad.domain.Account;
 
+//Requirements for Spring
+//1. Lifecycle management
+//1.1 Scope: singleton vs prototype vs request (mvc only)
 public class ReportingService {
     //Creator [GRASP]
     //Factory Method [GoF]

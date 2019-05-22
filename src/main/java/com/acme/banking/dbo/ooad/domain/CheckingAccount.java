@@ -12,7 +12,14 @@ public class CheckingAccount extends SavingAccount {
     }
 
     @Override
-    protected boolean validate(double amount) {
-        return super.validate(amount + overdraft);
+    public void withdraw(double amount) {
+        if (amount > getAmount()) {
+            if (amount < getAmount() + overdraft) {
+                double amountToOverdraft = amount - getAmount();
+                overdraft -= amountToOverdraft;
+                amount -= amountToOverdraft;
+            }
+        }
+        super.withdraw(amount);
     }
 }
